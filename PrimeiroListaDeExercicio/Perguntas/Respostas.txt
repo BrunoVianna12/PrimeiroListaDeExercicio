@@ -1,0 +1,26 @@
+﻿1.	Defina Classes, atributos e métodos
+	Classe: Classe é uma abstração de um objeto, seja ele qual for, em um Molde. É uma estrutura de dados que mescla ações (métodos e outros membros da função)
+	e estado(campos) em uma única unidade.
+
+	Atributos: Atributos são Características que uma classe possui
+
+	Métodos: São o comportamento que o objeto pode ter
+2.	O que significa encapsulamento
+	Significa proteger os atributos da classe. Com o principio de encapsulamento os atributos da classe ficam protegidos e só são externamente visíveis com os métodos que os manipulam.
+
+3.	Qual a função dos operadores set e get
+	O set tem a função de imputar dados. O get ele tem a função de retorno de dados
+4.	Explique o Principio SRP do SOLID
+	Principio da responsabilidade única, onde uma classe deve ter um e somente um motivo para mudar. 
+	Cada responsabilidade deve ser uma classe separada porque cada responsabilidade é eixo para a mudança
+5.	Qual é a função da classe Exception?
+	Capturar o erro que aconteceu em um mau funcionamento do programa
+6.	Defina para que serve cada palavra reservada da linguagem:
+•	namespace(Define o local da classe dentro do projeto(caminho virtual))
+•	private(Modificador que indica o estado de um membro da Orientação a objeto como privado)
+•	public(Modificador que indica o estado de um membro da Orientação a objeto como publico)
+•	sealed(Modificador que indica que uma classe não pode ser herdada)
+•	using(Utilizado para construir uma instrução e assim que termina, são fechado todos os objetos)
+•	void(Indica que a ação(metodo) não terá retorno)
+•	try/catch(Bloco que tenta realizar o código ali contido e captura o erro caso aconteça)
+•	set/get(set serve para imputar dados e get para retorno de dados)
