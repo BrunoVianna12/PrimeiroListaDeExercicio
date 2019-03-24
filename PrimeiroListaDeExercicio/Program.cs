@@ -24,7 +24,34 @@ namespace PrimeiroListaDeExercicio
             Console.WriteLine("Informe a Data de Validade.: ");
             produto.DataValidade = DateTime.Parse(Console.ReadLine());
             Console.WriteLine("Informe o ID da categoria");
+            produto.Categoria.IdCategoria = int.Parse(Console.ReadLine());
+            Console.WriteLine("Informe uma descrição para a categoria: ");
+            produto.Categoria.Descricao = Console.ReadLine();
 
+
+            ProdutoRepositories produtoRepositories = new ProdutoRepositories();
+            try
+            {
+                produtoRepositories.ExportarParaTxt(produto);
+                Console.WriteLine($"Exportação do produto {produto.Nome} feita com sucesso");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Hilston temos um erro: " + e.Message);
+            }
+
+            Console.WriteLine("Deseja cadastrar outro produto? (S)im ou (N)ão");
+            string operacao = Console.ReadLine();
+
+            if (operacao.Equals("S", StringComparison.OrdinalIgnoreCase))
+            {
+                Console.Clear();
+                Main(args);
+            }
+            else
+                Console.WriteLine("Fim do Programa");
+
+            Console.ReadKey();
         }
     }
 }

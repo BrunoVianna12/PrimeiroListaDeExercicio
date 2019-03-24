@@ -16,8 +16,8 @@ namespace PrimeiroListaDeExercicio.Repositories
 
                 writer.WriteLine($"Produto {produto.Nome}");
                 writer.WriteLine($"\tId do produto.........: {produto.IdProduto}");
-                writer.WriteLine($"\tPreco do Produto......: {produto.Preco}");
-                writer.WriteLine($"\tData de Validade......: {produto.DataValidade}");
+                writer.WriteLine($"\tPreco do Produto......: {produto.Preco.ToString("c")}");
+                writer.WriteLine($"\tData de Validade......: {produto.DataValidade.ToString("dd/MM/yyyy")}");
                 writer.WriteLine($"\tId Categoria..........: {produto.Categoria.IdCategoria}");
                 writer.WriteLine($"\tDescrição da categoria: {produto.Categoria.Descricao}");
                 
