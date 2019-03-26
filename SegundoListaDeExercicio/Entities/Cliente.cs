@@ -12,6 +12,5 @@ namespace SegundoListaDeExercicio.Entities
         public Endereco Endereco { get; set; }
 
 
-
     }
 }
